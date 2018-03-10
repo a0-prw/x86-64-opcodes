@@ -225,56 +225,33 @@
                      (make-instance 'reg64 :rname 'r15 :rcode 23 :rsize '64
                                     :rtype 'reg64)))
    (progn
-    (defclass 32-bit-reg (register) ((size :initarg :rsize :reader rsize)))
-    (defclass dreg (32-bit-reg) nil)
+    (defclass platform-size-reg (register)
+              ((size :initarg :rsize :reader rsize)))
+    (defclass dreg (platform-size-reg) nil)
     (define-constant dr0
-                     (make-instance 'dreg :rname 'dr0 :rcode 0 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr0 :rcode 0 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr1
-                     (make-instance 'dreg :rname 'dr1 :rcode 1 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr1 :rcode 1 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr2
-                     (make-instance 'dreg :rname 'dr2 :rcode 2 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr2 :rcode 2 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr3
-                     (make-instance 'dreg :rname 'dr3 :rcode 3 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr3 :rcode 3 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr4
-                     (make-instance 'dreg :rname 'dr4 :rcode 4 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr4 :rcode 4 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr5
-                     (make-instance 'dreg :rname 'dr5 :rcode 5 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr5 :rcode 5 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr6
-                     (make-instance 'dreg :rname 'dr6 :rcode 6 :rsize '32
-                                    :rtype 'dreg))
+                     (make-instance 'dreg :rname 'dr6 :rcode 6 :rsize
+                                    'platform-size :rtype 'dreg))
     (define-constant dr7
-                     (make-instance 'dreg :rname 'dr7 :rcode 7 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr8
-                     (make-instance 'dreg :rname 'dr8 :rcode 8 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr9
-                     (make-instance 'dreg :rname 'dr9 :rcode 9 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr10
-                     (make-instance 'dreg :rname 'dr10 :rcode 10 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr11
-                     (make-instance 'dreg :rname 'dr11 :rcode 11 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr12
-                     (make-instance 'dreg :rname 'dr12 :rcode 12 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr13
-                     (make-instance 'dreg :rname 'dr13 :rcode 13 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr14
-                     (make-instance 'dreg :rname 'dr14 :rcode 14 :rsize '32
-                                    :rtype 'dreg))
-    (define-constant dr15
-                     (make-instance 'dreg :rname 'dr15 :rcode 15 :rsize '32
-                                    :rtype 'dreg)))
+                     (make-instance 'dreg :rname 'dr7 :rcode 7 :rsize
+                                    'platform-size :rtype 'dreg)))
    (progn
     (defclass 128-bit-reg (register) ((size :initarg :rsize :reader rsize)))
     (defclass bndreg (128-bit-reg) nil)
@@ -591,56 +568,57 @@
                      (make-instance 'reg32 :rname 'r15d :rcode 23 :rsize '32
                                     :rtype 'reg32)))
    (progn
-    (defclass 32-bit-reg (register) ((size :initarg :rsize :reader rsize)))
-    (defclass creg (32-bit-reg) nil)
+    (defclass platform-size-reg (register)
+              ((size :initarg :rsize :reader rsize)))
+    (defclass creg (platform-size-reg) nil)
     (define-constant cr0
-                     (make-instance 'creg :rname 'cr0 :rcode 0 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr0 :rcode 0 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr1
-                     (make-instance 'creg :rname 'cr1 :rcode 1 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr1 :rcode 1 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr2
-                     (make-instance 'creg :rname 'cr2 :rcode 2 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr2 :rcode 2 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr3
-                     (make-instance 'creg :rname 'cr3 :rcode 3 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr3 :rcode 3 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr4
-                     (make-instance 'creg :rname 'cr4 :rcode 4 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr4 :rcode 4 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr5
-                     (make-instance 'creg :rname 'cr5 :rcode 5 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr5 :rcode 5 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr6
-                     (make-instance 'creg :rname 'cr6 :rcode 6 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr6 :rcode 6 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr7
-                     (make-instance 'creg :rname 'cr7 :rcode 7 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr7 :rcode 7 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr8
-                     (make-instance 'creg :rname 'cr8 :rcode 8 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr8 :rcode 8 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr9
-                     (make-instance 'creg :rname 'cr9 :rcode 9 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr9 :rcode 9 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr10
-                     (make-instance 'creg :rname 'cr10 :rcode 10 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr10 :rcode 10 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr11
-                     (make-instance 'creg :rname 'cr11 :rcode 11 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr11 :rcode 11 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr12
-                     (make-instance 'creg :rname 'cr12 :rcode 12 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr12 :rcode 12 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr13
-                     (make-instance 'creg :rname 'cr13 :rcode 13 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr13 :rcode 13 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr14
-                     (make-instance 'creg :rname 'cr14 :rcode 14 :rsize '32
-                                    :rtype 'creg))
+                     (make-instance 'creg :rname 'cr14 :rcode 14 :rsize
+                                    'platform-size :rtype 'creg))
     (define-constant cr15
-                     (make-instance 'creg :rname 'cr15 :rcode 15 :rsize '32
-                                    :rtype 'creg)))
+                     (make-instance 'creg :rname 'cr15 :rcode 15 :rsize
+                                    'platform-size :rtype 'creg)))
    (progn
     (defclass 8-bit-reg (register) ((size :initarg :rsize :reader rsize)))
     (defclass reg8 (8-bit-reg genreg) nil)
