@@ -111,6 +111,7 @@
   (defclass register nil
             ((name :initarg :rname :reader rname)
              (ext :initform 0 :reader rext)
+             (rex :initform nil :initarg :rrex :reader rrex)
              (code :initarg :rcode :reader rcode)
              (mod :initform 3 :reader rmod) (r/m :initarg :r/m :reader r/m)
              (type :initarg :rtype :reader rtype)))

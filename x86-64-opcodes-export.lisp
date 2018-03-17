@@ -18,7 +18,7 @@
     ymm29 ymm28 ymm27 ymm26 ymm25 ymm24 ymm23 ymm22 ymm21 ymm20 ymm19 ymm18
     ymm17 ymm16 ymm15 ymm14 ymm13 ymm12 ymm11 ymm10 ymm9 ymm8 ymm7 ymm6 ymm5
     ymm4 ymm3 ymm2 ymm1 ymm0 256-bit-reg *i-hash* genreg ea-dest-reg rtype r/m
-    rmod rcode rext rname register vsibsz vbc vtuple vbase vidx vseg
+    rmod rcode rrex rext rname register vsibsz vbc vtuple vbase vidx vseg
     memory-variant register-variant immediate-variant vval variant-mixin vsize
     vtype variant opc-escape opc-w opc-length opc-address-size opc-opsize
     opc-fields opc-regcode opc-mandatory-prefixes opc-modrm opc-encoding
