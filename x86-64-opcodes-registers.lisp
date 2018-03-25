@@ -530,29 +530,29 @@
                      (make-instance 'reg32 :rname 'edi :rrex nil :rcode 7
                                     :rsize '32 :rtype 'reg32))
     (define-constant r0d
-                     (make-instance 'reg32 :rname 'r0d :rrex t :rcode 8 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r0d :rrex nil :rcode 8
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r1d
-                     (make-instance 'reg32 :rname 'r1d :rrex t :rcode 9 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r1d :rrex nil :rcode 9
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r2d
-                     (make-instance 'reg32 :rname 'r2d :rrex t :rcode 10 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r2d :rrex nil :rcode 10
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r3d
-                     (make-instance 'reg32 :rname 'r3d :rrex t :rcode 11 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r3d :rrex nil :rcode 11
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r4d
-                     (make-instance 'reg32 :rname 'r4d :rrex t :rcode 12 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r4d :rrex nil :rcode 12
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r5d
-                     (make-instance 'reg32 :rname 'r5d :rrex t :rcode 13 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r5d :rrex nil :rcode 13
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r6d
-                     (make-instance 'reg32 :rname 'r6d :rrex t :rcode 14 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r6d :rrex nil :rcode 14
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r7d
-                     (make-instance 'reg32 :rname 'r7d :rrex t :rcode 15 :rsize
-                                    '32 :rtype 'reg32))
+                     (make-instance 'reg32 :rname 'r7d :rrex nil :rcode 15
+                                    :rsize '32 :rtype 'reg32))
     (define-constant r8d
                      (make-instance 'reg32 :rname 'r8d :rrex t :rcode 16 :rsize
                                     '32 :rtype 'reg32))
@@ -659,41 +659,41 @@
                      (make-instance 'reg8 :rname 'bh :rrex nil :rcode 7 :rsize
                                     '8 :rtype 'reg8))
     (define-constant spl
-                     (make-instance 'reg8 :rname 'spl :rrex nil :rcode 8 :rsize
+                     (make-instance 'reg8 :rname 'spl :rrex t :rcode 8 :rsize
                                     '8 :rtype 'reg8))
     (define-constant bpl
-                     (make-instance 'reg8 :rname 'bpl :rrex nil :rcode 9 :rsize
+                     (make-instance 'reg8 :rname 'bpl :rrex t :rcode 9 :rsize
                                     '8 :rtype 'reg8))
     (define-constant sil
-                     (make-instance 'reg8 :rname 'sil :rrex nil :rcode 10
-                                    :rsize '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'sil :rrex t :rcode 10 :rsize
+                                    '8 :rtype 'reg8))
     (define-constant dil
-                     (make-instance 'reg8 :rname 'dil :rrex nil :rcode 11
-                                    :rsize '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'dil :rrex t :rcode 11 :rsize
+                                    '8 :rtype 'reg8))
     (define-constant r0b
-                     (make-instance 'reg8 :rname 'r0b :rrex t :rcode 12 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r0b :rrex nil :rcode 12
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r1b
-                     (make-instance 'reg8 :rname 'r1b :rrex t :rcode 13 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r1b :rrex nil :rcode 13
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r2b
-                     (make-instance 'reg8 :rname 'r2b :rrex t :rcode 14 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r2b :rrex nil :rcode 14
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r3b
-                     (make-instance 'reg8 :rname 'r3b :rrex t :rcode 15 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r3b :rrex nil :rcode 15
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r4b
-                     (make-instance 'reg8 :rname 'r4b :rrex t :rcode 16 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r4b :rrex nil :rcode 16
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r5b
-                     (make-instance 'reg8 :rname 'r5b :rrex t :rcode 17 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r5b :rrex nil :rcode 17
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r6b
-                     (make-instance 'reg8 :rname 'r6b :rrex t :rcode 18 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r6b :rrex nil :rcode 18
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r7b
-                     (make-instance 'reg8 :rname 'r7b :rrex t :rcode 19 :rsize
-                                    '8 :rtype 'reg8))
+                     (make-instance 'reg8 :rname 'r7b :rrex nil :rcode 19
+                                    :rsize '8 :rtype 'reg8))
     (define-constant r8b
                      (make-instance 'reg8 :rname 'r8b :rrex t :rcode 20 :rsize
                                     '8 :rtype 'reg8))
@@ -747,29 +747,29 @@
                      (make-instance 'reg16 :rname 'di :rrex nil :rcode 7 :rsize
                                     '16 :rtype 'reg16))
     (define-constant r0w
-                     (make-instance 'reg16 :rname 'r0w :rrex t :rcode 8 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r0w :rrex nil :rcode 8
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r1w
-                     (make-instance 'reg16 :rname 'r1w :rrex t :rcode 9 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r1w :rrex nil :rcode 9
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r2w
-                     (make-instance 'reg16 :rname 'r2w :rrex t :rcode 10 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r2w :rrex nil :rcode 10
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r3w
-                     (make-instance 'reg16 :rname 'r3w :rrex t :rcode 11 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r3w :rrex nil :rcode 11
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r4w
-                     (make-instance 'reg16 :rname 'r4w :rrex t :rcode 12 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r4w :rrex nil :rcode 12
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r5w
-                     (make-instance 'reg16 :rname 'r5w :rrex t :rcode 13 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r5w :rrex nil :rcode 13
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r6w
-                     (make-instance 'reg16 :rname 'r6w :rrex t :rcode 14 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r6w :rrex nil :rcode 14
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r7w
-                     (make-instance 'reg16 :rname 'r7w :rrex t :rcode 15 :rsize
-                                    '16 :rtype 'reg16))
+                     (make-instance 'reg16 :rname 'r7w :rrex nil :rcode 15
+                                    :rsize '16 :rtype 'reg16))
     (define-constant r8w
                      (make-instance 'reg16 :rname 'r8w :rrex t :rcode 16 :rsize
                                     '16 :rtype 'reg16))
